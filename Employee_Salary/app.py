@@ -4,7 +4,7 @@ import joblib
 
 # Load the trained model
 model = joblib.load("best_model.pkl")
-print("hello")
+print("hello"
 st.set_page_config(page_title="Employee Salary Classification", page_icon="💼", layout="centered")
 
 st.title("💼 Employee Salary Classification App")
@@ -58,5 +58,6 @@ if uploaded_file is not None:
     st.write(batch_data.head())
     csv = batch_data.to_csv(index=False).encode('utf-8')
     st.download_button("Download Predictions CSV", csv, file_name='predicted_classes.csv', mime='text/csv')
+
 
 
